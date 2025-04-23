@@ -1,8 +1,8 @@
 from flask import Flask, render_template, jsonify
-app = Flask(_name_)
+app =  Flask(__name__)
 
 @app.route("/")
 def index():
-    return "hello from flask"
+    return render_template("Dashboar.html")
 
 app.run(host = "0.0.0.0")
